@@ -1,0 +1,15 @@
+// HW_4.cpp : 印出文字。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	printf("C語言歡迎您！\n"); //印出文字
+
+	system("PAUSE");
+	return 0;
+}
+
