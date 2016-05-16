@@ -1,0 +1,42 @@
+// homework_2.cpp : 求出圓面積與周長。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.1415926   //定義PI=3.1415926
+
+
+int main(int argc, char * argv[])   //宣告主程式
+{
+	printf("NCNU_EE_J.-K. Jhu\n");  //印出使用者資訊
+
+	float radius = 0, area = 0;     //float point (FP) = 浮點數；定義半徑
+	printf("radius = %f \n", radius);    //印出半徑初始值
+	printf("enter the radius number\n"); //輸入半徑數字
+	scanf_s(" %f ", &radius);            //scanf_s：鍵盤輸入數字，並且存到半徑裡
+	printf("radius = %f \n", radius);
+	area = PI * radius * radius;  //圓面積公式
+	printf("area of a circle = PI*radius*radius =%f", area);  //印出圓面積
+
+	system("PAUSE");
+	return 0;
+}
+
+//-------------------------
+// 基本型態包括：
+// char
+// int
+// short(int)
+// long(int)
+// float
+// double
+//-------------------------
+
+
+//-------------------------
+//快速註解方法有兩個：
+//其一：ctrl+K ctrl+C
+//其二：/*        */
+//-------------------------
+
+
