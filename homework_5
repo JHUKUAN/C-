@@ -1,20 +1,22 @@
-// HW_5.cpp : ...。
+// HW_5.cpp : 取代變數數值，並列印出結果。
 
 #include <stdio.h>
 #include <stdlib.h>
-#include<iostream>
-// #include "stdafx.h" ※error C3861:'system':找不到識別項(identifier not found)
-#include <stdafx.h>
+#include <iostream>
+#include "stdafx.h"   // ※error C3861:'system':找不到識別項(identifier not found ) → 找不到識別項就是代表找不到相關宣告他的東西
+#include <cstdlib>    //解決 error C3861:'system'
+// NOTE： #include <iostream> 與 #include "stdafx.h" 跟 system 有關；而 <iostream> && <stdlib.h> 都有包含 <cstdlib> 的樣子~
 
-int main()
+int main(int argc, _TCHAR* argv[])
 {
-
+	
 	int num1 = 123, num2 = 456;
 	float num3 = 3.14;
 	num1 = num2;
 	num2 = num3;
 	printf("num1=%d\n num2=%d\n", num1, num2);
+	
 
-	system ("PAUSE");
+	system("pause");
 	return 0;
 }
