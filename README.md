@@ -10,7 +10,7 @@
  - homework_4：印出文字
  - homework_5：取代變數數值，並列印出結果
  - homework_6：求出圓周率、半徑、圓面積
- - homework_7：
+ - homework_7：四則運算
  - homework_8：
  - homework_9：
  - homework_10：
