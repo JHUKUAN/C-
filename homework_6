@@ -1,0 +1,19 @@
+// HW_6.cpp : 圓周率、半徑、圓面積。
+
+#include <stdio.h>
+#include "stdafx.h"
+#include <cstdlib>
+
+int main()
+{
+
+	const double PI = 3.14159;
+	double area, radius = 10.0;
+	area = PI*radius*radius;
+	printf("圓周率 = %12.61f\n"
+		     "半徑   = %12.61f\n"
+		     "圓面積 = %12.61f\n", PI, radius, area);
+
+	system("PAUSE");
+	return 0;
+}
