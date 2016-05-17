@@ -4,9 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define max 10000   //定義max值為多少
+// #include <目的 = 需要呼叫那些函數庫>
 
 int main(int argc, char * argv[])   //宣告主程式
 {
+
+//程式碼位置開始-----------------------------------------------------------------------------------
 	int i, odd_sum = 0, even_sum = 0;   //宣告i、odd_sum=0、even_sum=0 三個變數
 
 	for (i = 1; i <= max; i += 2){
@@ -20,7 +23,8 @@ int main(int argc, char * argv[])   //宣告主程式
 		even_sum += i;   //even_sum = even_sum + i		
 	}
 	printf("%d,even_sum = %d\n", i, even_sum);
+//程式碼位置結束-----------------------------------------------------------------------------------
 
 	system("PAUSE");
-	return 0;
+	return 0;  //主程式結束
 }
