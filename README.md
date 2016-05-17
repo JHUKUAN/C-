@@ -13,7 +13,7 @@
  - homework_7：四則運算
  - homework_8：運算子--、++用法
  - homework_9：
- - homework_10：
+ - homework_10：各種資料型態及運算式值所佔記憶體的大小，以位元組(byte)計算
  - homework_11：
  - homework_12：
  - homework_13：
