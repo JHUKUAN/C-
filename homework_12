@@ -1,0 +1,28 @@
+// HW_12.cpp : 系統判斷是否及格。
+
+#include "stdafx.h"
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+
+	int score;
+	printf("請輸入成績：");
+	scanf_s("%d", &score);  //將scanf()改成scanf_s()
+	if (score>=60)  //if (條件)
+    //true → 執行{}
+	{
+		printf("你的成績是=%d\n", score);
+		printf("恭喜，您已取得該科學分.\n");
+	}
+	//false → 跳過{}
+	printf("程式執行結束\n");  
+
+	system("PAUSE");
+	return EXIT_SUCCESS;
+}
+
+
