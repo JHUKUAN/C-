@@ -9,7 +9,7 @@
  - homework_3：指派 (assign) 數值到 變數num裡面
  - homework_4：印出文字
  - homework_5：取代變數數值，並列印出結果
- - homework_6：
+ - homework_6：求出圓周率、半徑、圓面積
  - homework_7：
  - homework_8：
  - homework_9：
