@@ -11,12 +11,13 @@ int main(int argc, _TCHAR* argv[])
 {
 	
 	int num1 = 123, num2 = 456;
-	float num3 = 3.14;
-	num1 = num2;
-	num2 = num3;
-	printf("num1=%d\n num2=%d\n", num1, num2);
+	float num3 = 3.14;   //float 為浮點數
 	
-
-	system("pause");
+	num1 = num2;  //取代變數數值
+	num2 = num3;  //取代變數數值
+	
+	printf("num1=%d\n num2=%d\n", num1, num2);  //印出變數數值
+	
+	system("pause");  //保留cmd畫面
 	return 0;
 }
