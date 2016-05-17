@@ -1,0 +1,37 @@
+// HW_8.cpp : 運算子--、++用法。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <cstdlib>
+
+int main()  //宣告主程式
+{
+
+	int a = 123, b = 45, i = 1, d = 9;    //宣告變數
+	int c1, c2, c3, c4;                   //宣告變數
+	
+	/******單獨後置前置遞增遞減******/
+	i++;    //增值一，先做運算，之後變數加一
+	d--;    //減值一，先做運算，之後變數減一
+	++i;    //增值一，先變數加一，之後做運算
+	--d;    //減值一，先變數減一，之後做運算
+
+	/******結合後置遞增遞減******/
+	printf("a=%d b=%d i=%d\n", a, b, i);
+	c1 = a + b + (i++);
+	printf("a+b+(i++)=%d\n i=%d\n", c1, i);
+	printf("a=%d b=%d d=%d\n", a, b, d);
+	c2 = a - b - (d--);
+	printf("a-b-(d--)=%d\n  d=%d\n", c2, d);
+
+	/******結合前置遞增遞減******/
+	printf("a=%d b=%d i=%d\n", a, b, i);
+	c3 = a + b + (++i);
+	printf("a+b+(++i)=%d\n i=%d\n", c3, i);
+	printf("a=%d b=%d d=%d\n", a, b, d);
+	c4 = a - b - (--d);
+	printf("a-b-(--d)=%d\n  d=%d\n", c4, d);
+
+	system("PAUSE");
+	return 0;
+}
