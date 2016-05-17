@@ -12,7 +12,7 @@
  - homework_6：求出圓周率、半徑、圓面積
  - homework_7：四則運算
  - homework_8：運算子--、++用法
- - homework_9：
+ - homework_9：Perceptron Learning Algorithm (PLA)
  - homework_10：各種資料型態及運算式值所佔記憶體的大小，以位元組(byte)計算
  - homework_11：位移運算子
  - homework_12：
