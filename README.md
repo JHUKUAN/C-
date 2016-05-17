@@ -14,7 +14,7 @@
  - homework_8：運算子--、++用法
  - homework_9：
  - homework_10：各種資料型態及運算式值所佔記憶體的大小，以位元組(byte)計算
- - homework_11：
+ - homework_11：位移運算子
  - homework_12：
  - homework_13：
  - homework_14：
