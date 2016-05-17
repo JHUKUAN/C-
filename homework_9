@@ -1,0 +1,111 @@
+// HW_9.cpp : Perceptron Learning Algorithm (PLA)。
+
+#include "stdafx.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#include <time.h>
+#define data "data.txt"
+
+
+int outputsign(float w0, float w1, float w2, int x1, int x2);  //計算Sign(X*W)的函數
+int outputsign(float w0, float w1, float w2, int x1, int x2)
+{
+	float sum = x1*w1 + x2*w2 + w0;
+	printf("w0+x1w1+x2w2= %f\n", sum);
+	if (sum > 0)
+	{
+		return(1);
+	}
+	else if (sum<0)
+	{
+		return(-1);
+	}
+	else
+	{
+		return(0);
+	}
+
+}
+int _tmain(int argc, _TCHAR* argv[])
+{
+
+	int iter_id = 10;        //要跌代次數
+	int data_size = 3;             //有幾筆資料
+	int x1 = 0, x2 = 0, x0 = 1;  //misclassified_point_id
+	float signx;                    //計算sign的變數
+	int y = 0;
+	float w0 = 0;                 //threshold
+	float w1 = 0;                 //weights1
+	float w2 = 0;                //weiggts2                 
+	float a = 0;                 //error_rate
+	float aup = 0;               //error平方
+	float learning = 1;          //學習率
+
+
+	FILE *fp1;
+	//fp1 = fopen("D:\\deep\\data.txt", "r"); //讀檔
+	fp1 = fopen(data, "r"); //讀檔
+	if (fp1 == NULL)       //測試讀檔
+	{
+		printf("can't open");
+		return 0;
+	}
+	for (int i = 1; i <= iter_id; i++)   //跌代次數
+	{
+
+		fseek(fp1, 0L, SEEK_SET);
+		for (int j = 1; j <= data_size; j++)  //讀取資料
+		{
+			y = 0, x1 = 0, x2 = 0;           //初始化
+			fscanf(fp1, "%d%d%d", &y, &x1, &x2);
+			printf("y= %d", y);            //印出資料
+			printf("   ");
+			printf("x1= %d", x1);
+			printf("   ");
+			printf("x2= %d\n", x2);
+			int output = outputsign(w0, w1, w2, x1, x2); //帶入函數計算輸出
+
+			a = y - output;  //計算與實際誤差
+
+
+			if (a != 0)     //誤差如果不是0就開始更新w
+			{
+
+				w1 += (learning*y*x1); //更新w1
+				w2 += (learning*y*x2); //更新w2
+				w0 += (learning*y);    //更新w0
+				printf("w0=%f", w0); //印出w0,w1,w2
+				printf("   ");
+				printf("w1=%f", w1);
+				printf("   ");
+				printf("w2=%f\n", w2);
+
+			}
+			printf("sign出來的值=%d", output);
+			printf("   ");
+			printf("w0=%f", w0); //印出w0,w1,w2
+			printf("   ");
+			printf("w1=%f", w1);
+			printf("   ");
+			printf("w2=%f\n", w2);
+			aup = a*a; //Error平方
+		}
+
+		printf("Iteration %d : mean sqrt error=%.4f\n", i, sqrt(aup / data_size)); //印出誤差率
+		if (aup = 0)
+		{
+			printf("w0=%f", w0); //印出w0,w1,w2
+			printf("   ");
+			printf("w1=%f", w1);
+			printf("   ");
+			printf("w2=%f\n", w2);
+		}
+	}
+
+	fclose(fp1);               //關掉fopen
+
+	system("pause");
+	return 0;
+}
