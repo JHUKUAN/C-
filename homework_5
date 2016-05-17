@@ -1,8 +1,8 @@
 // HW_5.cpp : 取代變數數值，並列印出結果。
 
-#include <stdio.h>    //printf 會用到
+#include <stdio.h>    //printf與scanf會用到
 #include <stdlib.h>
-#include <iostream>
+#include <iostream>   // 意思：這裏面說明了程式中會用到的基本輸出入函數
 #include "stdafx.h"   // ※error C3861:'system':找不到識別項(identifier not found ) → 找不到識別項就是代表找不到相關宣告他的東西
 #include <cstdlib>    //解決 error C3861:'system'
 // NOTE： #include <iostream> 與 #include "stdafx.h" 跟 system 有關；而 <iostream> && <stdlib.h> 都有包含 <cstdlib> 的樣子~
