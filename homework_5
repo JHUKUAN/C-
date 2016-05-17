@@ -1,6 +1,6 @@
 // HW_5.cpp : 取代變數數值，並列印出結果。
 
-#include <stdio.h>
+#include <stdio.h>    //printf 會用到
 #include <stdlib.h>
 #include <iostream>
 #include "stdafx.h"   // ※error C3861:'system':找不到識別項(identifier not found ) → 找不到識別項就是代表找不到相關宣告他的東西
