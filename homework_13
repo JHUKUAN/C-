@@ -1,0 +1,33 @@
+// HW_13.cpp : 猜密碼
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void game(int, int, int);
+
+int main(){
+	int answer;
+	int left = 1, right = 100;
+
+	srand(time(NULL));
+	answer = rand() % 100;
+	printf("%d", answer);
+	while (1)   {
+		int guess;
+		printf("目前範圍 %d~%d，請猜一個數字:", left, right);
+		scanf_s("%d", & guess);
+		if (guess > right || guess < left);  {
+			printf("您輸入的數字不在範圍之內!!!");
+			continue;
+			if (guess == answer)break;
+			if (guess > answer)right = guess;
+			else left = guess;
+		}
+		printf("您猜對了\n");
+	}
+
+	return 0;
+}
+
