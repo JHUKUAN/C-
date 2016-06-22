@@ -1,0 +1,181 @@
+// HW_15.cpp : 統計英文數字。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#define number 1000
+
+main()
+{
+	int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0, o = 0, p = 0, q = 0, r = 0, s = 0, t = 0, u = 0, v = 0, w = 0, x = 0, y = 0, z = 0, I = 0;
+	char A[number];
+	gets_s(A);
+		do
+		{
+			switch (A[I])
+			{
+				case 'A':
+				case 'a':
+					a += 1;
+					break;
+
+				case 'B':
+				case 'b':
+					b += 1;
+					break;
+
+				case 'C':
+				case 'c':
+					c += 1;
+					break;
+
+				case 'D':
+				case 'd':
+					d += 1;
+					break;
+
+				case 'E':
+				case 'e':
+					e += 1;
+					break;
+
+				case 'F':
+				case 'f':
+					f += 1;
+					break;
+
+				case 'G':
+				case 'g':
+					g += 1;
+					break;
+
+				case 'H':
+				case 'h':
+					h += 1;
+					break;
+
+				case 'I':
+				case 'i':
+					i += 1;
+					break;
+
+				case 'J':
+				case 'j':
+					j += 1;
+					break;
+
+				case 'K':
+				case 'k':
+					k += 1;
+					break;
+
+				case 'L':
+				case 'l':
+					l += 1;
+					break;
+
+				case 'M':
+				case 'm':
+					m += 1;
+					break;
+
+				case 'N':
+				case 'n':
+					n += 1;
+					break;
+
+				case 'O':
+				case 'o':
+					o += 1;
+					break;
+
+				case 'P':
+				case 'p':
+					p += 1;
+					break;
+
+				case 'Q':
+				case 'q':
+					q += 1;
+					break;
+
+				case 'R':
+				case 'r':
+					r += 1;
+					break;
+
+				case 'S':
+				case 's':
+					s += 1;
+					break;
+
+				case 'T':
+				case 't':
+					t += 1;
+					break;
+
+				case 'U':
+				case 'u':
+					u += 1;
+					break;
+
+				case 'V':
+				case 'v':
+					v += 1;
+					break;
+
+				case 'W':
+				case 'w':
+					w += 1;
+					break;
+
+				case 'X':
+				case 'x':
+					x += 1;
+					break;
+
+				case 'Y':
+				case 'y':
+					y += 1;
+					break;
+
+				case 'Z':
+				case 'z':
+					z += 1;
+					break;
+			}
+			I++;
+		} while (i < A[I]);
+
+		printf("A、a=%d個 ",a);
+		printf("B、b=%d個 ",b);
+		printf("C、c=%d個 ",c);
+		printf("D、d=%d個 ",d);
+		printf("E、e=%d個\n ",e);
+		printf("F、f=%d個 ",f);
+		printf("G、g=%d個 ",g);
+		printf("H、h=%d個 ",h);
+		printf("I、i=%d個 ",i);
+		printf("J、j=%d個\n ",j);
+		printf("K、k=%d個 ",k);
+		printf("L、l=%d個 ",l);
+		printf("M、m=%d個 ",m);
+		printf("N、n=%d個 ",n);
+		printf("O、o=%d個\n ",o);
+		printf("P、p=%d個 ",p);
+		printf("Q、q=%d個 ",q);
+		printf("R、r=%d個 ",r);
+		printf("S、s=%d個 ",s);
+		printf("T、t=%d個\n ",t);
+		printf("U、u=%d個 ",u);
+		printf("V、v=%d個 ",v);
+		printf("W、w=%d個 ",w);
+		printf("X、x=%d個 ",x);
+		printf("Y、y=%d個\n ",y);
+		printf("Z、z=%d個\n ",z);
+		
+		system("pause");
+		return 0;
+}
+
+
