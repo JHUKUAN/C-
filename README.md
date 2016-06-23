@@ -20,7 +20,7 @@
  - homework_14：矩陣相乘
  - homework_15：統計英文數字
  - homework_16：偶數和-加總
- - homework_17：
+ - homework_17：奇數和-加總
  - homework_18：
  - homework_19：
  - homework_20：
