@@ -1,0 +1,71 @@
+// HW_20.cpp : 一元二次方程式解。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+int main(int argc,char argv[]){  //main strst
+	
+		float a, b, c, x, y, d, agree;  //做宣告
+		// float a, b, c, x, y, d, i; → i 在這裡是虛數才會用到，並沒有跑到記憶體內，所以不須需宣告
+		//char agree;  //做宣告
+
+
+// 觀念：一個 do 配 一個 while 連用
+		do  
+		{
+			printf(" ax^2+bx+c = 0 , 求 x= ? \n"); //印出方程式求解字串
+			printf("a=");  //印出輸入a變數
+			scanf_s("%f", &a);  //輸入a的指令
+			printf("b=");  //印出輸入b變數
+			scanf_s("%f", &b);  //輸入b的指令
+			printf("c=");  //印出輸入c變數
+			scanf_s("%f", &c);  //輸入c的指令
+
+//觀念：一個if 配 一個else
+//第一種選擇：一元二次方程式 → 當a = b = c = 0 ，則方程式有無限多組解
+			if (a == 0){
+				if (b == 0){
+					if (c == 0){
+						printf("x有無限多組解\n");
+					}
+					else {  //第二種選擇：一元二次方程式 → 當只有 c ~= 0 時，則方程式無解
+						printf("x無解\n");
+					}
+				}  //第二個if用
+				else {  //第三種選擇：一元二次方程式 → 當只有 b ~= 0 時，則方程式計算 ( x = -c / b ) 
+					x = -c / b;
+					printf("%f\n", &x);
+				}
+			}  //在上面if用
+			else {  //第四種選擇：一元二次方程式 → 當只有 a ~= 0 時，則方程式計算判斷 ( b^2-4*a*c < 0 ) 
+				if (b*b - 4 * a*c < 0){   //假如 判斷式 b^2-4*a*c < 0
+
+					x = -b / (a * 2);                       //計算"實數解"：x = -b / (a * 2)
+					y = sqrt(4 * a*c + b*b) / (a * 2);      //計算"虛數解"：y = sqrt(4 * a*c + b*b) / (a * 2)
+					printf("x=%f+%fi\n", x, y);             //印出 x + yi 
+
+					x = -b / (a * 2);                       //計算"實數解"：x = -b / (a * 2)
+					y = sqrt(4 * a*c + b*b) / (a * 2);      //計算"虛數解"：y = sqrt(4 * a*c + b*b) / (a * 2)
+					printf("x=%f-%fi\n", x, y);             //印出 x - yi 
+				}
+				else{
+					x = (-b + sqrt(b*b - 4 * a*c)) / (a * 2);
+					d = (-b - sqrt(b*b - 4 * a*c)) / (a * 2);
+					printf("x=%f or %f\n", x, d);
+				}
+			}
+
+
+			printf("重新計算請輸入y\n");
+			scanf_s("%s", &agree);
+
+		} while (agree == 'y' ); 
+
+						system("pause");
+						return 0;
+			
+}   //end main
+//62-65有問題
