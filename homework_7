@@ -9,11 +9,11 @@ int main()
 
 	int a = 123, b = 45, c1, c2, c3, c4, c5;
 
-	c1 = a+b;  //加-運算式
-	c2 = a-b;  //減-運算式
-	c3 = a*b;  //乘-運算式
-	c4 = a/b;  //商數-運算式
-	c5 = a%b;  //餘數-運算式
+	c1 = a+b;  //加 (Addition)-運算式
+	c2 = a-b;  //減 (Subtraction)-運算式
+	c3 = a*b;  //乘 (Multiplication)-運算式
+	c4 = a/b;  //商數 (Divsion)-運算式
+	c5 = a%b;  //餘數 (Remainder)-運算式
 
 	printf("%3d + %3d = %4d \n", a, b, c1);   //印出 + 後結果
 	printf("%3d - %3d = %4d \n", a, b, c2);   //印出 - 後結果
