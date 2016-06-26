@@ -59,13 +59,27 @@ int main(int argc,char argv[]){  //main strst
 			}
 
 
-			printf("重新計算請輸入y\n");
+			printf("重新計算請輸入y：\n");
 			scanf_s("%s", &agree);
 
 		} while (agree == 'y' ); 
 
 						system("pause");
-						return 0;
+						return 0;  //indicate that program ended successfully
 			
 }   //end main
+
+
 //62-65有問題
+/*
+--------------------------------------------------------------------------
+\n   Newline
+\t   Horizontal
+\a   Alert
+\\   Backslash
+\"   Double
+----------------------------------------------------------------------------
+*/
+
+
+
