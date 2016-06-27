@@ -1,0 +1,38 @@
+// HW_21.cpp : 資料型態的格式指定碼。
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	printf("顯示字元 %c\n", 'A');
+	printf("顯示字元編碼 %d\n", 'A');
+	printf("顯示字元編碼 %c\n", 65);
+	printf("顯示十進位整數 %d\n", 15);
+	printf("顯示八進位整數 %o\n", 15);
+	printf("顯示十六進位整數 %X\n", 15);
+	printf("顯示十六進位整數 %x\n", 15);
+	printf("顯示科學記號 %E\n", 0.001234);
+	printf("顯示科學記號 %e\n", 0.001234);
+
+	system("pause");
+	return 0;
+}
+
+
+/*
+http://openhome.cc/Gossip/CGossip/PrintfScanf.html
+格式指定碼：
+%c	以字元 方式輸出
+%d	10 進位整數輸出
+%o	以8進 位整數方式輸出
+%u	無號整數輸出
+%x, %X	將整 數以16進位方式輸出
+%f	浮點 數輸出
+%e, %E	使用科學記號顯示浮點數
+%g, %G	浮點數輸出，取%f或%e（%f或%E），看哪個表示精簡
+%%	顯示 %
+%s	字串輸出
+*/
+
+
