@@ -23,8 +23,8 @@
  - homework_17：奇數和-加總
  - homework_18：矩陣相乘
  - homework_19：限定3x3矩陣，自行輸入值，並做矩陣相乘。
- - homework_20：一元二次方程式求解
- - homework_21：
+ - homework_20：一元二次方程式求解 *
+ - homework_21：資料型態的格式指定碼
  - homework_22：
  - homework_23：
  - homework_24：
